@@ -1,0 +1,12 @@
+{
+    "name": "mock-github-prs",
+    "version": "1.0.0",
+    "description": "Mock GitHub PR service",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
