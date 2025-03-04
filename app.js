@@ -1,9 +1,41 @@
 const express = require("express");
 const crypto = require("crypto");
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
 const totalPrNumber = 5;
+
+const DATA_DIR = path.join(__dirname, 'pull-requests-data');
+
+const userEmailMap = {
+  "tianjiedong": "tianjiedong@microsoft.com",
+  "chrissu": "dongs@microsoft.com",
+  "jigao": "gaoji@microsoft.com",
+  "estherluo": "xiaoqlu@microsoft.com",
+  "gracejia": "xuhanjia@microsoft.com",
+  "zhejyan": "zhejyan@microsoft.com"
+};
+
+const userNameMap = {
+  "tianjiedong": "Charles Dong",
+  "chrissu": "Chris Su",
+  "jigao": "Ji Gao",
+  "estherluo": "Esther Luo",
+  "gracejia": "Grace Jia",
+  "zhejyan": "Jackie Yan"
+};
+
+function getDefualtEmailName(userId)
+{
+  return userId + "@microsoft.com"
+}
+
+function getDefualtEmailName(userId)
+{
+  return "Team member"
+}
 
 // Function to generate a deterministic hash
 function hashString(str) {
@@ -33,6 +65,39 @@ function generateMockPRs(userName) {
   }
   return prList;
 }
+
+// API Endpoint for recent pull requests
+app.get('/get/recentpullrequests/:userName', (req, res) => {
+  const userName = req.params.userName;
+  const filePath = path.join(DATA_DIR, `${userName}.json`);
+  const defaultFilePath = path.join(DATA_DIR, 'default.json');
+  
+  if (fs.existsSync(filePath)) {
+      // Load the user-specific JSON file
+      const data = Object.values(JSON.parse(fs.readFileSync(filePath, 'utf-8')));
+      res.json(data);
+  } else {
+      // Load default.json and modify createdBy fields
+      if (fs.existsSync(defaultFilePath)) {
+          let defaultData = Object.values(JSON.parse(fs.readFileSync(defaultFilePath, 'utf-8')));
+
+          console.log("defaultData:", defaultData);
+          console.log("Type of defaultData:", typeof defaultData);
+          console.log("Keys in defaultData:", Object.keys(defaultData));
+
+          let realData = defaultData.map(pr => ({
+              ...pr,
+              createdBy: {
+                  displayName: "Bo Wu's Team member",
+                  uniqueName: `${userName}@microsoft.com`
+              }
+          }));
+          res.json(realData);
+      } else {
+          res.status(404).json({ error: "User not found and default file missing" });
+      }
+  }
+});
 
 // API Endpoint
 app.get("/get/pullrequests/:userName", (req, res) => {

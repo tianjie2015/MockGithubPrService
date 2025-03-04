@@ -1,0 +1,75 @@
+{
+    "3809012": {
+      "repository": { "name": "Cosmic" },
+      "pullRequestId": 3809012,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Grace Jia",
+        "uniqueName": "xuhanjia@microsoft.com"
+      },
+      "creationDate": "February 28, 2025",
+      "title": "[Feature] Automate CI/CD Build Pipelines for OSI Services",
+      "description": "This PR introduces an automated CI/CD pipeline setup for OSI services.\n\nKey Features:\n- Implements GitHub Actions for automated builds and deployments.\n- Ensures linting, testing, and security checks are integrated into the pipeline.\n- Provides rollback mechanisms for failed deployments.\n\nExpected Impact:\n- Reduces manual effort in managing builds and deployments.\n- Improves release efficiency and service reliability.\n- Enhances developer productivity with streamlined workflows.\n\nTesting:\n- Verified build and deployment workflows in a staging environment.\n- Ensured rollback mechanisms function correctly in case of failures.\n- Gathered feedback from developers for further improvements.",
+      "Type": "Feature",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Jackie Yan",
+          "Email": "zhejyan@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["CI/CD", "Automation", "OSI"]
+    },
+    "3810125": {
+      "repository": { "name": "Cosmic" },
+      "pullRequestId": 3810125,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Grace Jia",
+        "uniqueName": "xuhanjia@microsoft.com"
+      },
+      "creationDate": "February 21, 2025",
+      "title": "[Improvement] Enhance CI/CD Pipeline Logging for OSI",
+      "description": "This PR improves logging mechanisms within the CI/CD pipeline.\n\nKey Changes:\n- Adds structured logs for each step in the pipeline.\n- Improves error reporting to provide actionable insights.\n- Enables centralized logging for better debugging.\n\nExpected Impact:\n- Makes troubleshooting deployment issues easier.\n- Improves visibility into build and deployment processes.\n- Helps engineering teams respond to failures more quickly.\n\nTesting:\n- Conducted end-to-end tests to verify log accuracy.\n- Simulated failure scenarios to check log usefulness.\n- Collected feedback from SREs and developers.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Esther Luo",
+          "Email": "xiaoqlu@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["CI/CD", "Logging", "OSI"]
+    },
+    "3811984": {
+      "repository": { "name": "Cosmic" },
+      "pullRequestId": 3811984,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Grace Jia",
+        "uniqueName": "xuhanjia@microsoft.com"
+      },
+      "creationDate": "February 14, 2025",
+      "title": "[Feature] Build Dashboard to Monitor Service Health in Cosmic",
+      "description": "This PR introduces a real-time dashboard to monitor OSI service health.\n\nKey Features:\n- Visualizes key performance metrics for OSI services.\n- Provides real-time alerts for service degradation or failures.\n- Integrates with existing logging and monitoring systems.\n\nExpected Impact:\n- Enhances observability and troubleshooting capabilities.\n- Helps teams quickly respond to incidents.\n- Reduces downtime by enabling proactive monitoring.\n\nTesting:\n- Deployed the dashboard in a test environment.\n- Verified real-time updates and alert accuracy.\n- Collected user feedback for further refinements.",
+      "Type": "Feature",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Chris Su",
+          "Email": "dongs@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Monitoring", "Service Health", "Cosmic"]
+    }
+  }
+  

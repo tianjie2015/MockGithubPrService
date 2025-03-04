@@ -1,0 +1,54 @@
+{
+    "3797562": {
+        "repository": {
+            "name": "Cosmic - Repos"
+        },
+        "pullRequestId": 3797562,
+        "status": 1,
+        "createdBy": {
+            "displayName": "Charles Dong",
+            "uniqueName": "tianjiedong@microsoft.com"
+        },
+        "creationDate": "February 19, 2025",
+        "title": "[Feature] Add Ring to Environment Mapping for Cosmic",
+        "description": "This PR introduces a new feature to add Ring to environment mapping for Cosmic.\n\nKey Features:\n- Implements ring-based environment segmentation for better deployment control.\n- Enhances support for dynamic environment configuration.\n- Allows gradual rollouts to specific environment rings.\n\nExpected Impact:\n- Improves deployment safety by enabling phased rollouts.\n- Enhances observability for staged environment testing.\n- Reduces risk by isolating updates to specific rings.\n\nTesting:\n- Verified mapping logic in staging environments.\n- Conducted regression tests to ensure backward compatibility.\n- Collected feedback from internal users for iteration.",
+        "Type": "Feature",
+        "isDraft": false,
+        "reviewers": [
+            {
+                "hasDeclined": false,
+                "isRequired": true,
+                "displayName": "Chris Su",
+                "Email": "dongs@microsoft.com"
+            }
+        ],
+        "supportsIterations": true,
+        "tags": ["OSI on Cosmic"]
+    },
+    "3802485": {
+        "repository": {
+            "name": "Repos"
+        },
+        "pullRequestId": 3802485,
+        "status": 1,
+        "createdBy": {
+            "displayName": "Charles Dong",
+            "uniqueName": "tianjiedong@microsoft.com"
+        },
+        "creationDate": "February 20, 2025",
+        "title": "[Bug Fix] Debug Schema Service Issues in Dev Fabric",
+        "description": "This PR addresses critical issues in the schema service within the Dev Fabric environment.\n\nKey Fixes:\n- Resolves incorrect schema validation errors.\n- Fixes intermittent connection failures to the schema registry.\n- Enhances logging for better debugging and monitoring.\n\nExpected Impact:\n- Ensures reliable schema validation in Dev Fabric.\n- Improves developer productivity by reducing debugging overhead.\n- Enhances service stability with better error handling.\n\nTesting:\n- Unit tests updated to cover edge cases in schema validation.\n- Integration tests run successfully in the Dev Fabric environment.\n- Logs reviewed to confirm error resolution.",
+        "Type": "Bug Fix",
+        "isDraft": false,
+        "reviewers": [
+            {
+                "hasDeclined": false,
+                "isRequired": true,
+                "displayName": "Ji Gao",
+                "Email": "gaoji@microsoft.com"
+            }
+        ],
+        "supportsIterations": true,
+        "tags": ["OSI on Cosmic"]
+    }
+}

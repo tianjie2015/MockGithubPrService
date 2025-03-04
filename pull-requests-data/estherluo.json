@@ -1,0 +1,107 @@
+{
+    "3805671": {
+      "repository": {
+        "name": "Office"
+      },
+      "pullRequestId": 3805671,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Esther Luo",
+        "uniqueName": "xiaoqlu@microsoft.com"
+      },
+      "creationDate": "March 4, 2025",
+      "title": "[Improvement] Pull Request Review Improvements: Phase 1",
+      "description": "This PR introduces the first phase of improvements to the pull request review process for the office-start and OfficeHome repositories.\n\nKey Enhancements:\n- Streamlined review workflow for increased efficiency.\n- Improved reviewer assignment logic.\n- Enhanced feedback tracking for pull requests.\n\nExpected Impact:\n- Reduces review turnaround time by optimizing assignment.\n- Provides better visibility into PR feedback history.\n- Improves developer experience through structured review insights.\n\nTesting:\n- Conducted unit tests for automated review assignment.\n- Validated feedback tracking in test environments.\n- Gathered early feedback from internal teams.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Grace Jia",
+          "Email": "xuhanjia@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Office", "Review Process"]
+    },
+    "3805672": {
+      "repository": {
+        "name": "Office"
+      },
+      "pullRequestId": 3805672,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Esther Luo",
+        "uniqueName": "xiaoqlu@microsoft.com"
+      },
+      "creationDate": "March 4, 2025",
+      "title": "[Feature] Create Pull Request for Work",
+      "description": "This PR ensures that all work is properly included in the GIT repository.\n\nKey Additions:\n- Implements automated checks to prevent missing changes.\n- Enhances the pull request creation workflow.\n- Ensures compliance with repository contribution guidelines.\n\nExpected Impact:\n- Reduces the risk of missing important changes.\n- Improves collaboration by enforcing structured PR creation.\n- Enhances repository integrity through automated validation.\n\nTesting:\n- Manual validation of PR creation workflow.\n- Automated tests for missing work detection.\n- Internal feedback collection from contributors.",
+      "Type": "Feature",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Ji Gao",
+          "Email": "gaoji@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["GIT", "Repository Management"]
+    },
+    "3805673": {
+      "repository": {
+        "name": "Office"
+      },
+      "pullRequestId": 3805673,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Esther Luo",
+        "uniqueName": "xiaoqlu@microsoft.com"
+      },
+      "creationDate": "March 4, 2025",
+      "title": "[AutoTSG][Suggestion] PullRequestId Column Should Have Link to Pull Requests",
+      "description": "This PR adds hyperlinks to the PullRequestId column for improved navigation.\n\nKey Enhancements:\n- Introduces clickable links in the PullRequestId column.\n- Enhances traceability between PRs and related issues.\n- Improves user experience for navigating PR details.\n\nExpected Impact:\n- Reduces time spent searching for related PRs.\n- Enhances usability for teams working with multiple PRs.\n- Improves linkage between PR metadata and tracking systems.\n\nTesting:\n- UI tests for link rendering in different views.\n- Validation of PR navigation through links.\n- Feedback from stakeholders on usability improvements.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Chris Su",
+          "Email": "dongs@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["AutoTSG", "Pull Request Navigation"]
+    },
+    "3805674": {
+      "repository": {
+        "name": "Office"
+      },
+      "pullRequestId": 3805674,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Esther Luo",
+        "uniqueName": "xiaoqlu@microsoft.com"
+      },
+      "creationDate": "March 4, 2025",
+      "title": "[Feature] Policy Tips in OWA (TSG for SE)",
+      "description": "This PR implements policy tips for Outlook on the Web (OWA) to enhance compliance and security measures.\n\nKey Features:\n- Introduces policy tip notifications in OWA.\n- Provides real-time alerts for security and compliance violations.\n- Enhances user awareness of company policies.\n\nExpected Impact:\n- Reduces policy violations through proactive notifications.\n- Improves security awareness among OWA users.\n- Enhances adherence to compliance guidelines.\n\nTesting:\n- End-to-end validation of policy tip triggers.\n- Integration testing with OWA workflows.\n- User feedback collection from internal pilot users.",
+      "Type": "Feature",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Charles Dong",
+          "Email": "tianjiedong@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["OWA", "Security & Compliance"]
+    }
+  }
+  

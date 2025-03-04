@@ -1,0 +1,132 @@
+{
+    "3805672": {
+      "repository": {
+        "name": "Repos"
+      },
+      "pullRequestId": 3805672,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Ji Gao",
+        "uniqueName": "gaoji@microsoft.com"
+      },
+      "creationDate": "March 4, 2025",
+      "title": "[Bug Fix] Fix Authentication Issue in API Service",
+      "description": "This PR resolves an issue where authentication tokens were not refreshing properly, leading to session expiration and unauthorized errors.\n\nKey Fixes:\n- Adjusted token refresh logic to ensure seamless re-authentication.\n- Improved session management to prevent unexpected logouts.\n- Added logging to track authentication failures.\n\nExpected Impact:\n- Ensures users remain authenticated without disruptions.\n- Improves security by enforcing correct token refresh mechanisms.\n- Enhances logging for better debugging and monitoring.\n\nTesting:\n- Manual authentication flow testing in staging.\n- Automated test cases for token refresh validation.\n- Security review to ensure compliance.",
+      "Type": "Bug Fix",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Esther Luo",
+          "Email": "xiaoqlu@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Authentication", "Security"]
+    },
+    "3805673": {
+      "repository": {
+        "name": "Cosmic"
+      },
+      "pullRequestId": 3805673,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Ji Gao",
+        "uniqueName": "gaoji@microsoft.com"
+      },
+      "creationDate": "March 3, 2025",
+      "title": "[Improvement] Improve Logging in Cosmic Agent",
+      "description": "This PR enhances logging for the Cosmic agent service to improve debugging and monitoring capabilities.\n\nKey Improvements:\n- Added detailed logs for API requests and responses.\n- Improved error handling logs for failed service calls.\n- Structured log messages to facilitate analysis.\n\nExpected Impact:\n- Enhances visibility into Cosmic agent operations.\n- Makes it easier to debug issues with detailed log traces.\n- Reduces troubleshooting time by providing actionable insights.\n\nTesting:\n- Verified new log entries in test environments.\n- Validated log format consistency across services.\n- Conducted performance testing to ensure minimal overhead.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Chris Su",
+          "Email": "dongs@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Logging", "Debugging", "Cosmic"]
+    },
+    "3805674": {
+      "repository": {
+        "name": "Office"
+      },
+      "pullRequestId": 3805674,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Ji Gao",
+        "uniqueName": "gaoji@microsoft.com"
+      },
+      "creationDate": "March 2, 2025",
+      "title": "[Improvement] Update Security Policies in Office App",
+      "description": "This PR strengthens role-based access control (RBAC) and improves security logging in the Office application.\n\nKey Enhancements:\n- Refined user roles and permissions for better access control.\n- Introduced audit logging for security-related events.\n- Implemented stricter validation on API requests.\n\nExpected Impact:\n- Enhances security by preventing unauthorized access.\n- Improves compliance with security policies and regulations.\n- Provides better visibility into security-related events.\n\nTesting:\n- Role-based access control tests in different environments.\n- Validation of security logs and audit trails.\n- Internal security team review for compliance.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Grace Jia",
+          "Email": "xuhanjia@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Security", "RBAC", "Office"]
+    },
+    "3805675": {
+      "repository": {
+        "name": "Builder"
+      },
+      "pullRequestId": 3805675,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Ji Gao",
+        "uniqueName": "gaoji@microsoft.com"
+      },
+      "creationDate": "March 1, 2025",
+      "title": "[Bug Fix] Resolve Memory Leak in Builder",
+      "description": "This PR fixes a memory leak issue in the Builder service that caused performance degradation over time.\n\nKey Fixes:\n- Identified and resolved unintentional object retention in memory.\n- Optimized garbage collection to free up unused memory.\n- Added monitoring tools to detect future memory leaks.\n\nExpected Impact:\n- Reduces memory consumption and improves system performance.\n- Enhances stability of the Builder service.\n- Prevents crashes due to excessive memory usage.\n\nTesting:\n- Memory profiling tests to verify garbage collection improvements.\n- Load testing to measure performance enhancements.\n- Continuous monitoring to detect potential memory leaks.",
+      "Type": "Bug Fix",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Charles Dong",
+          "Email": "tianjiedong@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Memory Leak", "Performance", "Builder"]
+    },
+    "3805676": {
+      "repository": {
+        "name": "Repos"
+      },
+      "pullRequestId": 3805676,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Ji Gao",
+        "uniqueName": "gaoji@microsoft.com"
+      },
+      "creationDate": "February 29, 2025",
+      "title": "[Feature] Add AI-Based Error Handling",
+      "description": "This PR introduces an AI-based system to detect and handle API errors dynamically.\n\nKey Features:\n- AI-driven error detection and automatic recovery.\n- Self-learning error mitigation strategies.\n- Real-time monitoring and anomaly detection.\n\nExpected Impact:\n- Reduces downtime by automatically handling errors.\n- Improves API reliability with proactive issue resolution.\n- Enhances developer efficiency by reducing manual debugging.\n\nTesting:\n- AI model validation using historical error data.\n- Real-time testing with simulated API failures.\n- Continuous learning and adaptation monitoring.",
+      "Type": "Feature",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Esther Luo",
+          "Email": "xiaoqlu@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["AI", "Error Handling", "Reliability"]
+    }
+  }

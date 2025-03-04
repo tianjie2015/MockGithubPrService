@@ -1,0 +1,28 @@
+{
+    "3783782": {
+      "repository": {
+        "name": "Repos"
+      },
+      "pullRequestId": 3783782,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Jackie Yan",
+        "uniqueName": "zhejyan@microsoft.com"
+      },
+      "creationDate": "February 26, 2025",
+      "title": "[Bug Fix] Resolve MDS Namespace Misconfiguration",
+      "description": "This PR addresses an issue with the MDS namespace configuration in app-resources.json.\n\n### Key Fixes:\n- Corrected misconfigured namespace mappings in MDS.\n- Updated resource allocation settings for consistency.\n- Improved validation checks to prevent future misconfigurations.\n\n### Expected Impact:\n- Ensures proper namespace resolution for MDS services.\n- Reduces deployment issues caused by incorrect configurations.\n- Improves system stability and maintainability.\n\n### Testing:\n- Verified namespace resolution in staging environments.\n- Ran automated configuration validation tests.\n- Conducted a manual review of app-resources.json updates.",
+      "Type": "Bug Fix",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Chris Su",
+          "uniqueName": "dongs@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["MDS", "Configuration", "Bug Fix"]
+    }
+  }

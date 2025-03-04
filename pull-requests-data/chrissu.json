@@ -1,0 +1,80 @@
+{
+    "3963247": {
+      "repository": {
+        "name": "Cosmic - Auth"
+      },
+      "pullRequestId": 3963247,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Chris Su",
+        "uniqueName": "dongs@microsoft.com"
+      },
+      "creationDate": "February 22, 2025",
+      "title": "[Auth Controller][Part 1] Add Elevation Reasons for Lockbox",
+      "description": "This PR introduces elevation reasons for Lockbox in the authentication controller.\n\n### Key Features:\n- Implements a justification mechanism for elevated access requests.\n- Ensures detailed audit logging for security and compliance.\n- Updates authentication workflows to enforce justification policies.\n\n### Expected Impact:\n- Enhances security and accountability in access elevation.\n- Improves traceability for privileged operations.\n- Aligns with compliance policies for privileged access management.\n\n### Testing:\n- Unit tests to validate justification enforcement.\n- Security audit checks to confirm compliance.\n- Staging environment tests for integration with authentication workflows.",
+      "Type": "Feature",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Charles Dong",
+          "uniqueName": "tianjiedong@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Lockbox", "Security", "Compliance"]
+    },
+    "3963683": {
+      "repository": {
+        "name": "Cosmic - Auth"
+      },
+      "pullRequestId": 3963683,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Chris Su",
+        "uniqueName": "dongs@microsoft.com"
+      },
+      "creationDate": "February 25, 2025",
+      "title": "[Auth Controller][Part 2] Add Lockbox Reason in Sweeper",
+      "description": "This PR integrates Lockbox justification tracking into the sweeper service to ensure full lifecycle auditing.\n\n### Key Features:\n- Captures justification data during automated sweeps.\n- Enhances security visibility by logging access reasons.\n- Ensures non-justified accesses are flagged for review.\n\n### Expected Impact:\n- Strengthens security monitoring and compliance tracking.\n- Prevents unauthorized access escalation without justification.\n- Improves integration with security audits and incident response.\n\n### Testing:\n- Validated logs capture justification reasons in sweeper runs.\n- Performance testing to ensure minimal overhead.\n- Security reviews and compliance verification with audit teams.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Ji Gao",
+          "uniqueName": "gaoji@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["Lockbox", "Security", "Access Control"]
+    },
+    "3946884": {
+      "repository": {
+        "name": "Cosmic - Auth"
+      },
+      "pullRequestId": 3946884,
+      "status": 1,
+      "createdBy": {
+        "displayName": "Chris Su",
+        "uniqueName": "dongs@microsoft.com"
+      },
+      "creationDate": "February 28, 2025",
+      "title": "Grant Read Permission to CosmicReadOnly",
+      "description": "This PR grants read-only permissions to the CosmicReadOnly role, ensuring controlled access to authentication resources.\n\n### Key Features:\n- Adds read-only access for Cosmic service accounts.\n- Ensures strict role-based access control (RBAC) compliance.\n- Prevents unintended privilege escalations.\n\n### Expected Impact:\n- Enhances security by enforcing least privilege access.\n- Reduces the risk of accidental modifications in authentication services.\n- Improves auditability of service account usage.\n\n### Testing:\n- Verified role assignment and read-only enforcement in staging.\n- Reviewed audit logs to confirm access behavior.\n- Security validation to ensure proper access restrictions.",
+      "Type": "Improvement",
+      "isDraft": false,
+      "reviewers": [
+        {
+          "hasDeclined": false,
+          "isRequired": true,
+          "displayName": "Esther Luo",
+          "uniqueName": "xiaoqlu@microsoft.com"
+        }
+      ],
+      "supportsIterations": true,
+      "tags": ["RBAC", "Permissions", "Security"]
+    }
+  }
